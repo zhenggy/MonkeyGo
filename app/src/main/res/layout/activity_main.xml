@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="20dp"
+  android:orientation="vertical">
+
+  <EditText
+    android:id="@+id/et_package"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="输入应用包名 如：com.zhenggy.monkeygo"/>
+  <EditText
+    android:id="@+id/et_times"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:hint="输入事件次数 如：5000"
+    android:inputType="number"/>
+
+  <EditText
+    android:id="@+id/et_minute"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="输入测试事件(单位：分钟) 如：1"
+    android:inputType="number"/>
+
+  <Button
+    android:id="@+id/bt_start"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="开始执行"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="80dp"
+    android:orientation="horizontal">
+    <Button
+      android:id="@+id/bt_show_normal"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="查看正常日志"/>
+    <Button
+      android:id="@+id/bt_show_error"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="查看错误日志"
+      android:textColor="#ff0000"/>
+  </LinearLayout>
+</LinearLayout>
